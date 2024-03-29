@@ -1,6 +1,6 @@
 import logging
 from App.CalculatorContext import CalculatorContext
-from App.HistoryManager import HistoryManager
+from App.HistoryManager import HistoryFacade as History
 from App.strategies.statistical_strategies import MeanOperation, MedianOperation, StdDevOperation
 from .strategies.arithmetic_strategies import Addition, Subtraction, Multiplication, Division
 from .utils.plugin_loader import load_plugins
@@ -10,9 +10,9 @@ class CalculatorApp:
     def __init__(self):
         self.logger = logging.getLogger(__name__)
         if ENABLE_HISTORY_FEATURE:
-            self.history_manager = HistoryManager()
+            self.history = History()
         else:
-            self.history_manager = None
+            self.history = None
         self.strategies = {
             "add": Addition(),
             "subtract": Subtraction(),
@@ -48,17 +48,17 @@ class CalculatorApp:
                     break
                 elif user_input == "view history":
                     if ENABLE_HISTORY_FEATURE:
-                        self.history_manager.print_history()
+                        self.history.print_history()
                     else:
                         print("History feature is disabled.")
                 elif user_input == "clear history":
                     if ENABLE_HISTORY_FEATURE:
-                        self.history_manager.clear_history()
+                        self.history.clear_history()
                     else:
                         print("History feature is disabled.")
                 elif user_input == "delete history":
                     if ENABLE_HISTORY_FEATURE:
-                        self.history_manager.delete_history_file()
+                        self.history.delete_history_file()
                     else:
                         print("History feature is disabled.")
                 elif user_input == "help":
@@ -77,7 +77,7 @@ class CalculatorApp:
                         print("Error: All operands must be numeric.")
                         continue
 
-                    calculator = CalculatorContext(self.strategies[command], self.history_manager)
+                    calculator = CalculatorContext(self.strategies[command], self.history)
                     result = calculator.execute_operation(*operands)
                     print(f"Result -> {result}")
 
