@@ -1,0 +1,25 @@
+2024-03-28 23:03:50,756 - CalculatorApp - INFO - Performed execute: (1, 2) = 3
+2024-03-28 23:03:50,756 - CalculatorApp - INFO - Performed execute: (-1, -2) = -3
+2024-03-28 23:03:50,756 - CalculatorApp - INFO - Performed execute: (0, 0) = 0
+2024-03-28 23:03:50,758 - CalculatorApp - INFO - Performed execute: (5, 3) = 2
+2024-03-28 23:03:50,758 - CalculatorApp - INFO - Performed execute: (-1, -2) = 1
+2024-03-28 23:03:50,758 - CalculatorApp - INFO - Performed execute: (0, 0) = 0
+2024-03-28 23:03:50,759 - CalculatorApp - INFO - Performed execute: (2, 3) = 6
+2024-03-28 23:03:50,760 - CalculatorApp - INFO - Performed execute: (-1, -2) = 2
+2024-03-28 23:03:50,760 - CalculatorApp - INFO - Performed execute: (0, 10) = 0
+2024-03-28 23:03:50,761 - CalculatorApp - INFO - Performed execute: (6, 3) = 2.0
+2024-03-28 23:03:50,761 - CalculatorApp - INFO - Performed execute: (-4, -2) = 2.0
+2024-03-28 23:03:50,763 - CalculatorApp - ERROR - Attempted to divide by zero: Cannot divide by zero.
+2024-03-28 23:03:50,766 - CalculatorApp - ERROR - Value error in operation: All operands must be numeric.
+2024-03-28 23:03:50,769 - CalculatorApp - INFO - Performed execute: (1, 2, 3, 4, 5) = 3
+2024-03-28 23:03:50,769 - CalculatorApp - INFO - Performed execute: (1, 1, 1, 1, 1) = 1
+2024-03-28 23:03:50,771 - CalculatorApp - INFO - Performed execute: (1, 2, 3, 4, 5) = 3
+2024-03-28 23:03:50,771 - CalculatorApp - INFO - Performed execute: (1, 2, 3, 4, 5, 6) = 3.5
+2024-03-28 23:04:15,736 - root - INFO - Logging setup complete.
+2024-03-28 23:04:15,739 - App.utils.plugin_loader - INFO - Loaded plugin: Power
+2024-03-28 23:04:15,739 - App.utils.plugin_loader - INFO - Loaded plugin: Square
+2024-03-28 23:04:15,740 - App.utils.plugin_loader - INFO - Loaded plugin: Log
+2024-03-28 23:04:18,506 - CalculatorApp - INFO - Performed execute: (12.0, 2.0) = 14.0
+2024-03-28 23:04:18,506 - CalculatorApp - INFO - Performed execute: (12.0, 2.0) = 14.0
+2024-03-28 23:04:23,754 - CalculatorApp - INFO - Performed execute: (2.0, 3.0) = 6.0
+2024-03-28 23:04:23,754 - CalculatorApp - INFO - Performed execute: (2.0, 3.0) = 6.0
