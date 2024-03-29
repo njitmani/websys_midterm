@@ -1,6 +1,6 @@
 import pandas as pd
 import os
-from .utils.config import HISTORY_SAVE_PATH
+from ..utils.config import HISTORY_SAVE_PATH
 
 class HistoryManager:
     def __init__(self, filename=HISTORY_SAVE_PATH, directory='data'):
