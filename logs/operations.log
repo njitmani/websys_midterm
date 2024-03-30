@@ -42,3 +42,28 @@
 2024-03-29 20:07:56,968 - CalculatorApp - INFO - Performed execute: (1, 1, 1, 1, 1) = 1
 2024-03-29 20:07:56,970 - CalculatorApp - INFO - Performed execute: (1, 2, 3, 4, 5) = 3
 2024-03-29 20:07:56,970 - CalculatorApp - INFO - Performed execute: (1, 2, 3, 4, 5, 6) = 3.5
+2024-03-29 20:14:03,759 - root - INFO - Logging setup complete.
+2024-03-29 20:14:03,767 - App.utils.plugin_loader - INFO - Loaded plugin: Power
+2024-03-29 20:14:03,768 - App.utils.plugin_loader - INFO - Loaded plugin: Square
+2024-03-29 20:14:03,769 - App.utils.plugin_loader - INFO - Loaded plugin: Log
+2024-03-29 20:14:05,572 - CalculatorApp - INFO - Performed execute: (1.0, 2.0, 34.0) = 37.0
+2024-03-29 20:14:05,572 - CalculatorApp - INFO - Performed execute: (1.0, 2.0, 34.0) = 37.0
+2024-03-29 20:14:09,231 - CalculatorApp - INFO - Performed execute: (1.0, 2.0) = -1.0
+2024-03-29 20:14:09,231 - CalculatorApp - INFO - Performed execute: (1.0, 2.0) = -1.0
+2024-03-29 20:14:11,927 - CalculatorApp - INFO - Performed execute: (3.0, 4.0) = 0.75
+2024-03-29 20:14:11,927 - CalculatorApp - INFO - Performed execute: (3.0, 4.0) = 0.75
+2024-03-29 20:14:15,633 - CalculatorApp - INFO - Performed execute: (3.0, 4.0) = 12.0
+2024-03-29 20:14:15,633 - CalculatorApp - INFO - Performed execute: (3.0, 4.0) = 12.0
+2024-03-29 20:14:17,799 - CalculatorApp - INFO - Performed execute: (2.0,) = 0.6931471805599453
+2024-03-29 20:14:17,799 - CalculatorApp - INFO - Performed execute: (2.0,) = 0.6931471805599453
+2024-03-29 20:14:20,370 - CalculatorApp - INFO - Performed execute: (3.0, 4.0) = 81.0
+2024-03-29 20:14:20,370 - CalculatorApp - INFO - Performed execute: (3.0, 4.0) = 81.0
+2024-03-29 20:14:24,142 - CalculatorApp - ERROR - Value error in operation: Square plugin requires exactly 1 operand
+2024-03-29 20:14:24,142 - CalculatorApp - ERROR - Value error in operation: Square plugin requires exactly 1 operand
+2024-03-29 20:14:30,436 - CalculatorApp - INFO - Performed execute: (2.0,) = 4.0
+2024-03-29 20:14:30,436 - CalculatorApp - INFO - Performed execute: (2.0,) = 4.0
+2024-03-29 20:14:35,733 - App - ERROR - Unexpected error occurred: 'HistoryFacade' object has no attribute 'print_history'
+Traceback (most recent call last):
+  File "/home/mani/websystem_midterm/App/__init__.py", line 51, in run
+    self.history.print_history()
+AttributeError: 'HistoryFacade' object has no attribute 'print_history'
