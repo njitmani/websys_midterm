@@ -4,6 +4,10 @@ from logging.handlers import RotatingFileHandler
 from .config import LOG_LEVEL
 
 def setup_logging():
+    """
+    Create logs directory if it doesn't exist
+    Configure logging
+    """
     # Create logs directory if it doesn't exist
     logs_dir = 'logs'
     os.makedirs(logs_dir, exist_ok=True)
