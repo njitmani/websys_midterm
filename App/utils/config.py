@@ -1,3 +1,8 @@
+"""
+Load environment variables from .env file and set default
+values for LOG_LEVEL, HISTORY_SAVE_PATH, and ENABLE_HISTORY_FEATURE.
+"""
+
 import os
 from dotenv import load_dotenv
 

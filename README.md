@@ -76,7 +76,45 @@ Configure the application behavior using the following environment variables in 
 - `HISTORY_SAVE_PATH`: Specifies the path for saving the history file.
 - `ENABLE_HISTORY_FEATURE`: Enables or disables history management (`True` or `False`).
 
-## Development
+Architectural Decisions
+-----------------------
+
+### Modular Design
+
+The calculator app is designed with modularity in mind, facilitating easy extension and maintenance. Each mathematical operation is encapsulated within its own strategy class, adhering to the Strategy Design Pattern. This approach enables the addition of new operations without modifying existing code, adhering to the Open/Closed Principle.
+
+### Strategy Design Pattern
+
+Operations like addition, subtraction, multiplication, and division are implemented using the Strategy pattern. This design choice allows the calculator's behavior to be chosen at runtime, providing the flexibility to add new strategies for operations without changing the client code.
+
+### Facade Pattern for History Management
+
+The `HistoryManager` class serves as a facade, simplifying the complexities of history management, including viewing, saving, clearing, and deleting calculation histories. It abstracts away the details of file handling and DataFrame operations from the rest of the application.
+
+### Use of Environment Variables
+
+Configuration through environment variables allows the application to be easily adapted to different environments without code changes. It supports configurations like logging levels and history feature toggling, making the app more flexible and easier to configure in various deployment scenarios.
+
+### Plugin System for Extensibility
+
+A plugin system enables the dynamic loading of additional operations, further extending the calculator's functionality. This system utilizes Python's dynamic import capabilities, allowing new plugins to be added to the `plugins` directory and automatically integrated into the application.
+
+### Error Handling and Validation
+
+Robust error handling and input validation ensure the application's reliability and user friendliness. Decorators are used to wrap operation execution, providing a unified way to handle exceptions and validate input across different operations.
+
+### Logging
+
+A comprehensive logging system, configurable via environment variables, records operational data, errors, and informational messages. This system aids in debugging and monitoring the application, ensuring any issues can be quickly identified and addressed.
+
+### Testing and Code Quality
+
+-   Unit Testing: Pytest is utilized for unit testing, ensuring that each component of the application behaves as expected. Tests cover a range of scenarios for each operation, including edge cases.
+-   Static Code Analysis: Pylint is used to enforce code quality and adherence to PEP 8 standards, contributing to the maintainability and readability of the code.
+
+### Continuous Integration
+
+GitHub Actions automates testing and linting on push or pull requests to the main branch, ensuring code quality and functional integrity are maintained throughout the development lifecycle.
 
 ## Contributing
 

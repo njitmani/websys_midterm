@@ -4,6 +4,12 @@ from logging import getLogger
 from ..strategies.base_strategy import OperationStrategy
 
 def load_plugins(logger=None):
+    """
+    A function to load plugins from a specified directory and return a dictionary of loaded plugins.
+    
+    :param logger: An optional logger object for logging messages (default is None)
+    :return: A dictionary containing the loaded plugins where the keys are plugin names in lowercase
+    """
     if logger is None:
         logger = getLogger(__name__)
 
