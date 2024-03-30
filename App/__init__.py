@@ -81,17 +81,17 @@ class CalculatorApp:
                     break
                 elif user_input == "view history":
                     if ENABLE_HISTORY_FEATURE:
-                        self.history.print_history()
+                        self.history.show_history()
                     else:
                         print("History feature is disabled.")
                 elif user_input == "clear history":
                     if ENABLE_HISTORY_FEATURE:
-                        self.history.clear_history()
+                        self.history.clear_operations_history()
                     else:
                         print("History feature is disabled.")
                 elif user_input == "delete history":
                     if ENABLE_HISTORY_FEATURE:
-                        self.history.delete_history_file()
+                        self.history.delete_history()
                     else:
                         print("History feature is disabled.")
                 elif user_input == "help":

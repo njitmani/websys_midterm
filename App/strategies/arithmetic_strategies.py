@@ -5,9 +5,6 @@ from .base_strategy import OperationStrategy
 class Addition(OperationStrategy):
     @wrapper
     def execute(self, *operands):
-        """
-        A description of the entire function, its parameters, and its return types.
-        """
         self.validate_operands(*operands)
         return sum(operands)
 

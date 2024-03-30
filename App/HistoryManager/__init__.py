@@ -31,7 +31,7 @@ class HistoryFacade:
     def clear_operations_history(self):
         self.history_manager.clear_history()
 
-    def delete_history_file(self):
+    def delete_history(self):
         """
         Deletes the history file using the history manager.
         """

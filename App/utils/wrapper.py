@@ -9,10 +9,12 @@ os.makedirs(logs_dir, exist_ok=True)
 # Configure logging
 logger = logging.getLogger('CalculatorApp')
 handler = logging.FileHandler(os.path.join(logs_dir, 'operations.log'))
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+formatter = logging.Formatter(
+    '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 logger.setLevel(logging.INFO)
+
 
 def wrapper(func):
     @wraps(func)
@@ -56,8 +58,8 @@ def wrapper(func):
             return "Error: Cannot divide by zero."
         except ValueError as e:
             logger.error(f"Value error in operation: {e}")
-            return "Error: Invalid value." 
+            return "Error: Invalid value."
         except Exception as e:
             logger.error(f"Unexpected error in operation: {e}", exc_info=True)
-            return "Error: An unexpected error occurred." 
+            return "Error: An unexpected error occurred."
     return wrapped_func

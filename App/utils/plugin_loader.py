@@ -3,6 +3,7 @@ import importlib
 from logging import getLogger
 from ..strategies.base_strategy import OperationStrategy
 
+
 def load_plugins(logger=None):
     """
     A function to load plugins from a specified directory and return a dictionary of loaded plugins.
@@ -28,7 +29,11 @@ def load_plugins(logger=None):
             plugin_module = importlib.import_module(module_path, package='src')
             for item in dir(plugin_module):
                 obj = getattr(plugin_module, item)
-                if isinstance(obj, type) and issubclass(obj, OperationStrategy) and obj is not OperationStrategy:
+                if isinstance(
+                        obj,
+                        type) and issubclass(
+                        obj,
+                        OperationStrategy) and obj is not OperationStrategy:
                     plugin_name = obj.__name__
                     plugins[plugin_name.lower()] = obj()
                     logger.info(f"Loaded plugin: {plugin_name}")
