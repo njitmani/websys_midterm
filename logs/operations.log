@@ -23,3 +23,22 @@
 2024-03-28 23:04:18,506 - CalculatorApp - INFO - Performed execute: (12.0, 2.0) = 14.0
 2024-03-28 23:04:23,754 - CalculatorApp - INFO - Performed execute: (2.0, 3.0) = 6.0
 2024-03-28 23:04:23,754 - CalculatorApp - INFO - Performed execute: (2.0, 3.0) = 6.0
+2024-03-29 20:07:56,940 - CalculatorApp - INFO - Performed execute: (1, 2) = 3
+2024-03-29 20:07:56,940 - CalculatorApp - INFO - Performed execute: (-1, -2) = -3
+2024-03-29 20:07:56,940 - CalculatorApp - INFO - Performed execute: (0, 0) = 0
+2024-03-29 20:07:56,943 - CalculatorApp - ERROR - Value error in operation: All operands must be numeric.
+2024-03-29 20:07:56,945 - CalculatorApp - INFO - Performed execute: (5, 3) = 2
+2024-03-29 20:07:56,946 - CalculatorApp - INFO - Performed execute: (-1, -2) = 1
+2024-03-29 20:07:56,946 - CalculatorApp - INFO - Performed execute: (0, 0) = 0
+2024-03-29 20:07:56,948 - CalculatorApp - INFO - Performed execute: (2, 3) = 6
+2024-03-29 20:07:56,948 - CalculatorApp - INFO - Performed execute: (-1, -2) = 2
+2024-03-29 20:07:56,948 - CalculatorApp - INFO - Performed execute: (0, 10) = 0
+2024-03-29 20:07:56,950 - CalculatorApp - ERROR - Value error in operation: All operands must be numeric.
+2024-03-29 20:07:56,953 - CalculatorApp - INFO - Performed execute: (6, 3) = 2.0
+2024-03-29 20:07:56,953 - CalculatorApp - INFO - Performed execute: (-4, -2) = 2.0
+2024-03-29 20:07:56,955 - CalculatorApp - ERROR - Attempted to divide by zero: Cannot divide by zero.
+2024-03-29 20:07:56,964 - CalculatorApp - ERROR - Value error in operation: All operands must be numeric.
+2024-03-29 20:07:56,967 - CalculatorApp - INFO - Performed execute: (1, 2, 3, 4, 5) = 3
+2024-03-29 20:07:56,968 - CalculatorApp - INFO - Performed execute: (1, 1, 1, 1, 1) = 1
+2024-03-29 20:07:56,970 - CalculatorApp - INFO - Performed execute: (1, 2, 3, 4, 5) = 3
+2024-03-29 20:07:56,970 - CalculatorApp - INFO - Performed execute: (1, 2, 3, 4, 5, 6) = 3.5
