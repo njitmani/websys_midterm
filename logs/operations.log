@@ -67,3 +67,10 @@ Traceback (most recent call last):
   File "/home/mani/websystem_midterm/App/__init__.py", line 51, in run
     self.history.print_history()
 AttributeError: 'HistoryFacade' object has no attribute 'print_history'
+2024-04-02 17:27:13,837 - root - INFO - Logging setup complete.
+2024-04-02 17:27:13,849 - App.utils.plugin_loader - INFO - Loaded plugin: Power
+2024-04-02 17:27:13,850 - App.utils.plugin_loader - INFO - Loaded plugin: Square
+2024-04-02 17:27:13,851 - App.utils.plugin_loader - INFO - Loaded plugin: Log
+2024-04-02 17:27:32,697 - CalculatorApp - INFO - Performed execute: (1.0, 3.0, 4.0) = 8.0
+2024-04-02 17:27:32,697 - CalculatorApp - INFO - Performed execute: (1.0, 3.0, 4.0) = 8.0
+2024-04-02 17:27:40,132 - App - INFO - Calculator app terminated.
